@@ -1,21 +1,10 @@
 body{
     background-color: rgb(152, 205, 205);
-}
-
-#top{
-    text-align: center;
-}
-.project1{
 	text-align: center;
 }
-.contact-me{
-    text-align: center;
+#top, .project1, .project2{
+ margin-bottom: 3em;
 }
-
-#middle{
-    text-align: center;
-}
-
 .frame {
 	width: 90%;
 	margin: 40px auto;
@@ -55,4 +44,17 @@ body{
   
   .btn-1:active {
 	top: 2px;
+  }
+
+  .hidden {
+	opacity: 0;
+	filter: blur(5px);
+	transform: translateX(-100%);
+	transition: all 1s;
+  }
+
+  .show {
+	opacity: 1;
+	filter: blur(0);
+	transform: translateX(0);
   }
